@@ -1,0 +1,5 @@
+# Point-in-time signal data card
+
+Signal: trailing 12-month VOO adjusted-price return, P(Sep 2026)/P(Sep 2025) − 1. Unit: decimal total-return proxy; includes provider distribution/split adjustments. Input source and immutable commit: see validation-and-ai-use.md. Observation date September 30; documented availability October 22 at 21:44:32 UTC. Review date November 23, 2026. The code refuses review dates at or before snapshot availability. This is availability of the complete snapshot, not an assertion of original historical release timestamps.
+
+Rule: nonpositive signal pauses new risk-taking; a positive value only permits further checks. Missing/altered data stop the app. Freshness >45 calendar days blocks live use independently. No imputation. No backfilled historical decisions. Adjusted history may be revised. Signal has no validated predictive edge; use in an educational pilot only. Existing DGS10 audit is not passed off as completed. Replacing this proposed signal requires a documented new rule and validation.

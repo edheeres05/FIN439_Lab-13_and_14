@@ -1,0 +1,116 @@
+{
+  "as_of": "2026-11-23",
+  "price_end": "2026-09-30",
+  "snapshot_available": "2026-10-22T21:44:32+00:00",
+  "window": 59,
+  "cost_bps": 10.0,
+  "target": 0.06,
+  "reserve": 0.05,
+  "vol_limit": 0.15,
+  "turnover_limit": 0.25,
+  "prior_turnover": 0.0,
+  "drawdown": 0.0,
+  "current_weights": {
+    "VOO": 0.5,
+    "QQQ": 0.0,
+    "SOXX": 0.0,
+    "SCHD": 0.0,
+    "BIL": 0.1,
+    "BND": 0.4
+  },
+  "signal_value": 0.15766912917670384,
+  "signal_active": true,
+  "stale": true,
+  "paused": false,
+  "feasible_grid_count": 1072,
+  "rows": [
+    {
+      "portfolio": "Equal weight",
+      "weights": {
+        "VOO": 0.16666666666666666,
+        "QQQ": 0.16666666666666666,
+        "SOXX": 0.16666666666666666,
+        "SCHD": 0.16666666666666666,
+        "BIL": 0.16666666666666666,
+        "BND": 0.16666666666666666
+      },
+      "gross_estimate": 0.12599514855611507,
+      "net_estimate": 0.12471902072108487,
+      "volatility": 0.13878975653451545,
+      "one_way_turnover": 0.5666666666666667,
+      "rolling_turnover": 0.5666666666666667,
+      "trading_cost": 0.0011333333333333332,
+      "verdict": "FAIL",
+      "failed_rules": [
+        "Rolling turnover",
+        "Stale data"
+      ]
+    },
+    {
+      "portfolio": "Inverse volatility",
+      "weights": {
+        "VOO": 0.026812804056063743,
+        "QQQ": 0.02003422408481693,
+        "SOXX": 0.01097196959006488,
+        "SCHD": 0.027566254328196583,
+        "BIL": 0.8504819921008353,
+        "BND": 0.06413275584002257
+      },
+      "gross_estimate": 0.04384385142306377,
+      "net_estimate": 0.042154798417525674,
+      "volatility": 0.01891610174929287,
+      "one_way_turnover": 0.8090544401039137,
+      "rolling_turnover": 0.8090544401039137,
+      "trading_cost": 0.0016181088802078275,
+      "verdict": "FAIL",
+      "failed_rules": [
+        "6% net-return target",
+        "Rolling turnover",
+        "Stale data"
+      ]
+    },
+    {
+      "portfolio": "Benchmark",
+      "weights": {
+        "VOO": 0.5,
+        "QQQ": 0.0,
+        "SOXX": 0.0,
+        "SCHD": 0.0,
+        "BIL": 0.1,
+        "BND": 0.4
+      },
+      "gross_estimate": 0.06680590432448666,
+      "net_estimate": 0.06680590432448663,
+      "volatility": 0.09662589020929946,
+      "one_way_turnover": 0.0,
+      "rolling_turnover": 0.0,
+      "trading_cost": 0.0,
+      "verdict": "FAIL",
+      "failed_rules": [
+        "Stale data"
+      ]
+    },
+    {
+      "portfolio": "Constrained",
+      "weights": {
+        "VOO": 0.4,
+        "QQQ": 0.0,
+        "SOXX": 0.0,
+        "SCHD": 0.0,
+        "BIL": 0.35,
+        "BND": 0.25
+      },
+      "gross_estimate": 0.06363073129916859,
+      "net_estimate": 0.06309891593351913,
+      "volatility": 0.07415557934738007,
+      "one_way_turnover": 0.25,
+      "rolling_turnover": 0.25,
+      "trading_cost": 0.0005,
+      "verdict": "FAIL",
+      "failed_rules": [
+        "Stale data"
+      ]
+    }
+  ],
+  "recommendation": "REJECT live allocation; educational pilot only"
+}
